@@ -1,0 +1,39 @@
+.text-center{
+    text-align: center;
+}
+.custom-text{
+    color:#ff7675;
+}
+.background-texts{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+.auto-text{
+    display: flex;
+    position: absolute;
+    left: 42%;
+}
+.text{
+    margin-left: .4rem;
+}
+.text::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 40%;
+    border-right: 2px solid #ff7675;;
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+
+}
+h2{
+    font-size: 3rem;
+}
